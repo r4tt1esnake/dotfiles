@@ -1,0 +1,49 @@
+clear
+win-remove 
+help
+clear 
+pl-create Best of Casiopea
+pl-create City Pop
+win-add-p Best of Casiopea
+win-add-p 
+pl-create 
+pl-rename City Pop
+pl-rename Best of Casiopea
+pl-rename "City Pop" City Pop
+pl-rename 
+pl-create "City Pop"
+volume-down
+pl-create Casiopea
+new -p Casiopea
+load -p a
+playlist -n
+update-cache
+add ~/Music
+save -p heck
+clear -p
+clear-p
+edit
+remov
+rem
+rm
+delete
+remove
+add Music/
+D
+filter 
+quit
+qiot
+pl-create default
+playlist
+new
+save
+cmus-tutorial
+tutorial
+vol 60%
+vol 100%
+vol +100
+vol inc
+vol 50
+vol 100
+vol max
+volume 100

@@ -1,0 +1,100 @@
+{
+  "name": "base16-generator",
+  "displayName": "Base16 Theme Generator",
+  "description": "All Base16 themes available on the fly",
+  "version": "1.14.0",
+  "publisher": "golf1052",
+  "keywords": [
+    "base16"
+  ],
+  "icon": "images/logo.png",
+  "license": "See license in LICENSE",
+  "homepage": "https://github.com/golf1052/base16-generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/golf1052/base16-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/golf1052/base16-generator/issues",
+    "email": "golf1052@msn.com"
+  },
+  "galleryBanner": {
+    "color": "#8fa1b3",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Base16 Default Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-default-dark.json"
+      },
+      {
+        "label": "Base16 Ocean Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base16-ocean-dark.json"
+      }
+    ],
+    "commands": [
+      {
+        "category": "Base16",
+        "title": "Activate theme",
+        "command": "base16.generator.activateTheme"
+      },
+      {
+        "category": "Base16",
+        "title": "Deactivate theme",
+        "command": "base16.generator.deactivateTheme"
+      },
+      {
+        "category": "Base16",
+        "title": "Activate all themes",
+        "command": "base16.generator.activateAllThemes"
+      },
+      {
+        "category": "Base16",
+        "title": "Deactivate all themes",
+        "command": "base16.generator.deactivateAllThemes"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "strip-json-comments": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.1",
+    "@types/mkdirp": "^1.0.1",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^12.12.6",
+    "@types/rimraf": "^3.0.0",
+    "@types/vscode": "^1.22.0",
+    "color": "^3.1.3",
+    "js-yaml": "^3.14.0",
+    "mkdirp": "^1.0.4",
+    "mocha": "^8.1.3",
+    "recursive-copy": "^2.0.11",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7",
+    "vscode-test": "^1.4.0"
+  },
+  "__metadata": {
+    "id": "6395de93-5453-4afa-89d9-748ab3cd50f1",
+    "publisherId": "57c8fe45-33dc-4854-a048-545edc3b7bc9",
+    "publisherDisplayName": null
+  }
+}
