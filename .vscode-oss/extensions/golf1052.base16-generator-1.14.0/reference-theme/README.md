@@ -1,1 +1,0 @@
-The theme file in here is hand made as a reference theme. The colors in this file should then be converted to use the template variables (see: https://github.com/chriskempson/base16/blob/master/builder.md). It uses the colors from Base16 Ocean Dark.
