@@ -1,3 +1,5 @@
+/home/alexycn/Music/Grieg - Peer Gynt Suites Nos. 1 and 2 - 01 - Peer Gynt Suite No. 1, Op. 46 - I. Morning Mood.flac
+/home/alexycn/Music/Prokofiev - Romeo and Juliet - 06 - Romeo and Juliet, Op. 64 - Act I - Dance of the Knights.flac
 /home/alexycn/Music/By the end of century-abI03jRs8JU.mp3
 /home/alexycn/Music/Casiopea - Down Upbeat-lPq0pSjlMh4.mp3
 /home/alexycn/Music/Casiopea - 'Homestretch'-rzdrRq6G0Ik.mp3
@@ -16,8 +18,57 @@
 /home/alexycn/Music/Gypsy Wind-mkMQsHdsR54.mp3
 /home/alexycn/Music/Life Game-ymNWZ3XdOfc.mp3
 /home/alexycn/Music/Make Up City-qjU8uYZSNKU.mp3
+/home/alexycn/Music/01 - Prelude de la porte heroique du ciel.flac
+/home/alexycn/Music/02 - 3 Sarabandes  - Sarabande No. 1.flac
+/home/alexycn/Music/03 - 3 Sarabandes  - Sarabande No. 2.flac
+/home/alexycn/Music/04 - 3 Sarabandes  - Sarabande No. 3.flac
+/home/alexycn/Music/05 - 3 Gymnopedies - No. 1. Lent et douloureux.flac
+/home/alexycn/Music/06 - 3 Gymnopedies - No. 2. Lent et triste.flac
+/home/alexycn/Music/07 - 3 Gymnopedies - No. 3. Lent et grave.flac
+/home/alexycn/Music/08 - 3 Gnossiennes  - Gnossienne No. 1.flac
+/home/alexycn/Music/09 - 3 Gnossiennes  - Gnossienne No. 2.flac
+/home/alexycn/Music/10 - 3 Gnossiennes  - Gnossienne No. 3.flac
+/home/alexycn/Music/11 - 3 Sonneries de la RoseCroix - No. 1. Air de l-ordre.flac
+/home/alexycn/Music/12 - 3 Sonneries de la RoseCroix - No. 2. Air du grand maitre.flac
+/home/alexycn/Music/13 - 3 Sonneries de la RoseCroix - No. 3. Air du grand prieur.flac
+/home/alexycn/Music/Chopin - Nocturnes selections - 02 - Nocturne No.02 in E flat.flac
+/home/alexycn/Music/Bach - Orchestral Suites - 21 - Suite No. 3 in D Major, BWV 1068 - II. Air.flac
+/home/alexycn/Music/Tchaikovsky Glazunov - Violin Concertos - 05 - Violin Concerto in D major, Op.35 - I. Allegro moderato - Moderato assai.flac
+/home/alexycn/Music/Tchaikovsky Glazunov - Violin Concertos - 06 - Violin Concerto in D major, Op.35 - II. Canzonetta. Andante.flac
+/home/alexycn/Music/Tchaikovsky Glazunov - Violin Concertos - 07 - Violin Concerto in D major, Op.35 - III. Finale. Allegro vivacissimo.flac
+/home/alexycn/Music/01 - Requiem, K626 1791 - I. Introitus - Requiem.flac
+/home/alexycn/Music/10 - Requiem, K626 1791 - IV. Offertorium - 1. Domine Jesu.flac
+/home/alexycn/Music/11 - Requiem, K626 1791 - IV. Offertorium - 2. Hostias.flac
 /home/alexycn/Music/ジャンク フジヤマ - 風になり（MUSIC VIDEO）-ShvCOFBu6wE.mp3
 /home/alexycn/Music/Ano Sora no Muko Gawa e-X07SNIMqc9E.mp3
+/home/alexycn/Music/01 - The Planets, Op. 32 - I. Mars, the Bringer of War.flac
+/home/alexycn/Music/02 - The Planets, Op. 32 - II. Venus, the Bringer of Peace.flac
+/home/alexycn/Music/03 - The Planets, Op. 32 - III. Mercury, the Winged Messenger.flac
+/home/alexycn/Music/04 - The Planets, Op. 32 - IV. Jupiter, the Bringer of Jollity.flac
+/home/alexycn/Music/05 - The Planets, Op. 32 - V. Saturn, the Bringer of Old Age.flac
+/home/alexycn/Music/06 - The Planets, Op. 32 - VI. Uranus, the Magician.flac
+/home/alexycn/Music/07 - The Planets, Op. 32 - VII. Neptune, the Mystic.flac
+/home/alexycn/Music/02 - Requiem, K626 1791 - II. Kyrie.flac
+/home/alexycn/Music/03 - Requiem, K626 1791 - III. Sequentia - 1. Dies irae.flac
+/home/alexycn/Music/04 - Requiem, K626 1791 - III. Sequentia - 2. Tuba mirum.flac
+/home/alexycn/Music/12 - Requiem, K626 1791 - V. Sanctus.flac
+/home/alexycn/Music/13 - Requiem, K626 1791 - VI. Benedictus.flac
+/home/alexycn/Music/14 - Requiem, K626 1791 - VII. Agnus Dei.flac
+/home/alexycn/Music/15 - Requiem, K626 1791 - VIII. Communio - Lux aeterna.flac
+/home/alexycn/Music/16 - Vesperae solennes de confessore, K339 1780 - I. Dixit Dominus Psalm 109.flac
+/home/alexycn/Music/17 - Vesperae solennes de confessore, K339 1780 - II. Confitebor Psalm 110.flac
+/home/alexycn/Music/18 - Vesperae solennes de confessore, K339 1780 - III. Beatus vir Psalm 111.flac
+/home/alexycn/Music/19 - Vesperae solennes de confessore, K339 1780 - IV. Laudate pueri Psalm 112.flac
+/home/alexycn/Music/20 - Vesperae solennes de confessore, K339 1780 - V. Laudate Dominum Psalm 116.flac
+/home/alexycn/Music/21 - Vesperae solennes de confessore, K339 1780 - VI. Magnificat.flac
+/home/alexycn/Music/22 - Tuba mirum from Requiem, alternative version.flac
+/home/alexycn/Music/05 - Requiem, K626 1791 - III. Sequentia - 3. Rex tremendae.flac
+/home/alexycn/Music/06 - Requiem, K626 1791 - III. Sequentia - 4. Recordare .flac
+/home/alexycn/Music/07 - Requiem, K626 1791 - III. Sequentia - 5. Confutatis.flac
+/home/alexycn/Music/08 - Requiem, K626 1791 - III. Sequentia - 6. Lacrimosa.flac
+/home/alexycn/Music/09 - Requiem, K626 1791 - III. Sequentia - 7. Amen.flac
+/home/alexycn/Music/Bach - Toccata and Fugue Other Works - 01 - Toccata and Fugue in D minor, BWV 565 - Toccata.flac
+/home/alexycn/Music/Bach - Toccata and Fugue Other Works - 02 - Toccata and Fugue in D minor, BWV 565 - Fugue.flac
 /home/alexycn/Music/Tony  - インディアン・サマー (Indian Summer)-aaHr4k9VnGg.mp3
 /home/alexycn/Music/Toshiki Kadomatsu - If you ... HD-aO99vqD3a3U.mp3
 /home/alexycn/Music/Airport Lady - Toshiki Kadomatsu (1994)-fLxQtcrzTlA.mp3

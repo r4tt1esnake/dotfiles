@@ -1,1 +1,0 @@
-picom -b --experimental-backends --backend glx

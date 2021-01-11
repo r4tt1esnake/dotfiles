@@ -52,4 +52,6 @@ fi
 [ -f ~/.xprofile ] && . ~/.xprofile
 
 xset m 1 0 &
+light-locker &
+autorandr --change & 
 exec i3

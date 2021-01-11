@@ -1,3 +1,6 @@
+update-cache
+fset classical=genre="Classical"
+add ~/Music
 clear
 win-remove 
 help
@@ -17,8 +20,6 @@ pl-create Casiopea
 new -p Casiopea
 load -p a
 playlist -n
-update-cache
-add ~/Music
 save -p heck
 clear -p
 clear-p
