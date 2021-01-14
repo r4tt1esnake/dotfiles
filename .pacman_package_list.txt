@@ -53,8 +53,6 @@ lib32-gamemode-git
 lib32-nvidia-utils
 libratbag
 light-locker
-lightdm
-lightdm-webkit-theme-aether
 linux
 linux-firmware
 lxappearance-gtk3
@@ -133,3 +131,4 @@ xterm
 yadm
 yay
 youtube-dl
+zoom
