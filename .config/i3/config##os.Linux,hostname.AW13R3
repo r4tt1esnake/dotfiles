@@ -85,6 +85,10 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+# move workspaces to monitors
+bindsym $mod+Shift+period move workspace to output right
+bindsym $mod+Shift+comma move workspace to output left
+
 # move to next and previous workspaces
 bindsym $mod+minus workspace prev
 bindsym $mod+equal workspace next
@@ -183,8 +187,7 @@ smart_gaps on
 smart_borders no_gaps
 hide_edge_borders smart_no_gaps
 
-# Keyboard lights configuration
-exec_always --no-startup-id ~/bin/kb_init_state.sh
+# Keyboard lights toggle
 bindsym $mod+F12 exec ~/bin/toggle-kb-illum.sh
 
 # Programs on launch

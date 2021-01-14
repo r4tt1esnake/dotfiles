@@ -3,4 +3,3 @@ if [[ $(acpi | grep -e "Discharging" -c) == 0 ]]; then
 else
     "$HOME"/bin/toggle-kb-illum.sh off
 fi
-

@@ -1,0 +1,6 @@
+dispNum=$(xrandr | grep " connected" -c) 
+isNvidia=$(optimus-manager --status | grep "Current" | grep "nvidia" -c)
+
+if [ $dispNum -gt 1 ] && [ $isNvidia -eq 0 ]; then
+    optimus-manager --switch nvidia --no-confirm
+fi
