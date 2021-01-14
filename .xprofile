@@ -1,6 +1,1 @@
-export TERMINAL=/usr/bin/alacritty
-export VISUAL=/usr/bin/code
-export EDITOR=/usr/bin/nano
-export PATH=$PATH:~/bin
-export GTK_THEME=Materia:dark
-export GTK2_RC_FILES=/usr/share/themes/Materia/gtk-2.0
+.xprofile##os.Linux,hostname.AW13R3

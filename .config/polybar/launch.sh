@@ -14,7 +14,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 if type "polybar"; then
     mNum=$(polybar -m | grep -e':' -c)
-    if [[ mNum > 1 ]]; then
+    if [[ $mNum -gt 1 ]]; then
         #prime=$(polybar -m | grep "primary" | cut -d":" -f1)
         #MONITOR=$prime polybar --reload -q main -c "$DIR"/config.ini &
         for m in $(polybar -m | cut -d":" -f1); do

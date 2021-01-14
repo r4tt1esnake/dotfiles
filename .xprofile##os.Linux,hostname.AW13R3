@@ -1,4 +1,4 @@
-"$HOME"/bin/gpuMode.sh
+#"$HOME"/bin/gpuMode.sh
 light-locker
 
 export TERMINAL=/usr/bin/kitty
