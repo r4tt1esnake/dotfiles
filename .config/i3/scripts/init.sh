@@ -8,7 +8,6 @@ launch=(
     "pasystray" 
     "dunst" 
     "unclutter"
-    "light-locker"
 )
 
 for t in ${launch[@]}; do

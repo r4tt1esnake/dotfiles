@@ -1,6 +1,3 @@
-#"$HOME"/bin/gpuMode.sh
-light-locker
-
 export TERMINAL=/usr/bin/kitty
 export VISUAL=/usr/bin/code
 export EDITOR=/usr/bin/nano
