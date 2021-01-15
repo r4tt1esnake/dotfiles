@@ -1,10 +1,12 @@
 DIR="$HOME"/bin
 
+# Reverse-PRIME
+xrandr --setprovideroutputsource NVIDIA-G0 modesetting
+
 "$DIR"/initDPI.sh
 "$DIR"/inputConfig.sh
 
-# Reverse-PRIME
-xrandr --setprovideroutputsource NVIDIA-G0 modesetting
+autorandr -c
 
 export TERMINAL=/usr/bin/kitty
 export VISUAL=/usr/bin/code
