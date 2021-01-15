@@ -1,7 +1,7 @@
 if [ $# -ge 1 ]; then
     dispNum=$1
 else
-    dispNum=$(xrandr | grep " connected" -c)
+    dispNum=$(xrandr --listactivemonitors | grep "Monitors:" | cut -d" " -f2)
 fi
 
 if [ $dispNum -gt 1 ]; then

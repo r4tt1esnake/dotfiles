@@ -1,1 +1,0 @@
-.pacman_package_list.txt##os.Linux,hostname.ThinkPadX380Y

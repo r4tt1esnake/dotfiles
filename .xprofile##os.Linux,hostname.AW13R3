@@ -1,5 +1,10 @@
-"$HOME"/bin/gpuMode.sh
-light-locker
+DIR="$HOME"/bin
+
+"$DIR"/initDPI.sh
+"$DIR"/inputConfig.sh
+
+# Reverse-PRIME
+xrandr --setprovideroutputsource NVIDIA-G0 modesetting
 
 export TERMINAL=/usr/bin/kitty
 export VISUAL=/usr/bin/code

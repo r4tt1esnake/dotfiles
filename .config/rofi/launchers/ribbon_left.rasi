@@ -8,9 +8,9 @@
  */
 
 configuration {
-	font:							"FantasqueSansMono Nerd Font 10";
+	font:							"Consolas 10";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Vimix-Doder-dark";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
@@ -40,7 +40,7 @@ prompt {
 	padding: 						0% 1% 0% 0%;
 	background-color: 				@background;
 	text-color: 					@foreground;
-	font:							"FantasqueSansMono Nerd Font 12";
+	font:							"Consolas 12";
 }
 
 entry {
@@ -61,7 +61,7 @@ inputbar {
     expand:                         false;
 	border:							0% 0% 0.3% 0%;
     border-radius:                  0% 0% 0% 0%;
-	border-color:					@border-alt;
+	border-color:					@background;
     margin:                         0% 17% 0% 0%;
     padding:                        1%;
     position:                       center;

@@ -1,7 +1,7 @@
+clear
 update-cache
 fset classical=genre="Classical"
 add ~/Music
-clear
 win-remove 
 help
 clear 
