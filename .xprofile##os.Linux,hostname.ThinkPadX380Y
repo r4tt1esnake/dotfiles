@@ -1,4 +1,9 @@
-light-locker
+DIR="$HOME"/bin
+
+"$DIR"/initDPI.sh
+"$DIR"/inputConfig.sh
+
+autorandr -c
 
 export TERMINAL=/usr/bin/kitty
 export VISUAL=/usr/bin/code
