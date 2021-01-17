@@ -11,5 +11,5 @@ xinput | while read -r m; do
     xinput set-prop $id 'libinput Accel Profile Enabled' 0, 1
     xinput set-prop $id 'libinput Accel Speed' 1
     xinput set-prop $id 'libinput Natural Scrolling Enabled' 1
-    xinput set-prop $id 324 1
+    xinput set-prop $id 'libinput Tapping Enabled' 1
 done
