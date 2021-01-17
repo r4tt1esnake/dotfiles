@@ -13,4 +13,4 @@ export VISUAL=/usr/bin/code
 export EDITOR=/usr/bin/nano
 export PATH=$PATH:~/bin
 export GTK_THEME=Materia:dark
-export GTK2_RC_FILES=/usr/share/themes/Materia/gtk-2.0
+export GTK2_RC_FILES=/usr/share/themes/Materia-light/gtk-2.0
