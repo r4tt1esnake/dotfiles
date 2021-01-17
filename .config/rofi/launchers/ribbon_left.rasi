@@ -11,7 +11,7 @@ configuration {
 	font:							"Consolas 10";
     show-icons:                     true;
 	icon-theme: 					"Vimix-Doder-dark";
-    display-drun: 					"";
+    display-drun: 					"#";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;

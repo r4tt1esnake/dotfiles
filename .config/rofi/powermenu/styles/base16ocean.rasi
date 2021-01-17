@@ -1,0 +1,9 @@
+* {
+    background:                     #2b303b55;
+    background-alt:                 #2b303b55;
+    foreground:                     #eff1f5ff;
+    border:               			#8fa1b3ff;
+    border-alt:               		#4f5b66ff;
+    selected:               		#ebcb8bee;
+    urgent:                         #bf616aff;
+}
