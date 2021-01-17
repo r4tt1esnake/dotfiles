@@ -1,5 +1,5 @@
 if type xkbset; then
-    xkbset bouncekeys 30
+    xkbset bouncekeys 20
 fi
 
 xinput | while read -r m; do
