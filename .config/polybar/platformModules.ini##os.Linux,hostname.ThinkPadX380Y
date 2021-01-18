@@ -56,13 +56,13 @@ format-full-padding = 2
 ;   %percentage% (default)
 ;   %time%
 ;   %consumption% (shows current charge rate in watts)
-label-charging = %percentage%%
+label-charging = %percentage% (%time%)
 
 ; Available tokens:
 ;   %percentage% (default)
 ;   %time%
 ;   %consumption% (shows current discharge rate in watts)
-label-discharging = %percentage%%
+label-discharging = %percentage% (%time%)
 
 ; Available tokens:
 ;   %percentage% (default)

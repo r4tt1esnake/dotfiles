@@ -2,6 +2,10 @@
 
 # Add this script to your wm startup file.
 
+getResX () {
+    echo "$1" | cut -d":" -f2 | cut -d"x" -f1
+}
+
 DIR="$HOME/.config/polybar/"
 
 # Terminate already running bar instances
@@ -16,15 +20,20 @@ if type "polybar"; then
     mNum=$(polybar -m | grep -e':' -c)
     if [[ $mNum -gt 1 ]]; then
         polybar -m | while read -r l; do
-            resX=$(echo "$l" | cut -d":" -f2 | cut -d"x" -f1)
+            resX=$(getResX "$l")
             m=$(echo "$l" | cut -d":" -f1)
-            if [[ "$resX" -lt 1000 ]]; then
+            if [[ "$resX" -lt 1100 ]]; then
                 MONITOR=$m polybar --reload -q ext-mini -c "$DIR"/config.ini &
             else 
                 MONITOR=$m polybar --reload -q ext -c "$DIR"/config.ini &
             fi
         done
     else
-        polybar --reload -q main -c "$DIR"/config.ini &
+        resX=$(getResX "$(polybar -m)")
+        if [[ "$resX" -lt 1100 ]]; then
+            polybar --reload -q main-mini -c "$DIR"/config.ini &
+        else 
+            polybar --reload -q main -c "$DIR"/config.ini &
+        fi
     fi
 fi

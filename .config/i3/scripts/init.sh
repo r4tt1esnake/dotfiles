@@ -2,10 +2,7 @@
 
 "$HOME"/.config/picom/launch.sh
 
-launch=(
-    "nm-applet" 
-    "blueman-applet" 
-    "pasystray" 
+launch=( 
     "dunst" 
     "unclutter"
 )
