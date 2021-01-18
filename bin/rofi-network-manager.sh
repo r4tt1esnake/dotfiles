@@ -1,0 +1,1 @@
+rofi-network-manager/rofi-network-manager.sh
