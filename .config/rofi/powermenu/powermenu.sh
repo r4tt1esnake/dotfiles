@@ -27,7 +27,7 @@ sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
 
 # comment these lines to disable random style
 #themes=($(ls -p --hide="powermenu.sh" --hide="styles" --hide="confirm.rasi" --hide="message.rasi" $dir))
-theme="column_square"
+theme="card_square"
 
 uptime=$(uptime -p | sed -e 's/up //g')
 

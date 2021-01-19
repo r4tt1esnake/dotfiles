@@ -8,9 +8,9 @@
  */
 
 configuration {
-	font:							"FantasqueSansMono Nerd Font 12";
+	font:							"Consolas 12";
     show-icons:                     false;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Vimix";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
@@ -84,11 +84,11 @@ element {
 }
 
 element-text {
-	font:							"feather 32";
+	font:							"Material Icons Outlined 32";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         4.5% 2.7% 4.5% 2.7%;
+    margin:                         4.5% 2.7% 6.5% 2.7%;
 }
 
 element normal.urgent,
@@ -107,7 +107,7 @@ element alternate.active {
 element selected {
     background-color:               @selected;
     text-color:                     @foreground;
-    border:                  		0% 0% 0% 0.2%;
+    border:                  		0.2% 0.2% 0.2% 0.2%;
     border-radius:                  0%;
     border-color:                  	@border;
 }
