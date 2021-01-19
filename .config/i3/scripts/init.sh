@@ -2,6 +2,8 @@
 
 "$HOME"/.config/picom/launch.sh
 
+xss-lock light-locker
+
 launch=( 
     "dunst" 
     "unclutter"

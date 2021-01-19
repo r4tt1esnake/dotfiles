@@ -66,8 +66,7 @@ case $chosen in
 		systemctl reboot
         ;;
     $lock)
-		# TODO
-		xss-lock
+		loginctl lock-session
         ;;
     $suspend)
 		mpc -q pause
