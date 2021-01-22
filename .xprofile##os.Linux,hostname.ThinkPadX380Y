@@ -1,9 +1,16 @@
 DIR="$HOME"/bin
 
-"$DIR"/initDPI.sh
 "$DIR"/inputConfig.sh
 
+# Screen config
+"$DIR"/initDPI.sh
 autorandr -c
+
+# Input methods
+fcitx &
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
 
 export TERMINAL=/usr/bin/kitty
 export VISUAL=/usr/bin/code
