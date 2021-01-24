@@ -1,14 +1,18 @@
 vol=$(pamixer --get-volume)
 mute=$(pamixer --get-mute)
+postfix=""
 
-if [[ $mute == "true" ]]; then
-    symbol=""
-elif [[ $vol -le 33 ]]; then
-    symbol=""
+if [[ $vol -le 33 ]]; then
+    prefix=""
 elif [[ $vol -le 66 ]]; then
-    symbol=""
+    prefix=""
 else
-    symbol=""
+    prefix=""
 fi
 
-echo -n "$symbol $vol%" 
+if [[ $mute == "true" ]]; then
+    prefix=""
+    postfix="(MUT)"
+fi
+
+echo -n "$prefix $vol% $postfix"
