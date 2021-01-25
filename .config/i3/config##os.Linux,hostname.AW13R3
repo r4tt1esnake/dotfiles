@@ -155,6 +155,9 @@ bindsym XF86TouchpadToggle exec --no-startup-id ~/bin/toggle-trackpad.sh
 # Media playback
 bindsym Pause exec playerctl play-pause
 
+# Power menu
+bindsym $mod+c exec --no-startup-id ~/.config/rofi/powermenu/powermenu.sh
+
 # Screenshots
 bindsym --release Print exec --no-startup-id ~/bin/screenshot.sh 4
 bindsym --release Shift+Print exec --no-startup-id ~/bin/screenshot.sh area

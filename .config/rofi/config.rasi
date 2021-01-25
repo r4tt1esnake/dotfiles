@@ -3,6 +3,6 @@
 configuration {
   show-icons:         true;
   icon-theme:         "Vimix-Doder-dark";
-  font: "Consolas 13";
+  font: "Consolas 11";
 }
 @import "/usr/share/rofi/themes/android_notification.rasi"
