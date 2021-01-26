@@ -2,4 +2,4 @@
 
 "$HOME"/bin/initDPI.sh
 "$HOME"/.fehbg
-"$HOME"/.config/polybar/launch.sh
+"$HOME"/.config/polybar/launch.sh &
