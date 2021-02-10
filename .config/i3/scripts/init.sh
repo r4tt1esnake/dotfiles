@@ -1,8 +1,10 @@
 "$HOME"/.config/i3/scripts/rldUI.sh &
 
-"$HOME"/.config/picom/launch.sh &
+#"$HOME"/.config/picom/launch.sh &
 
 xss-lock light-locker &
+
+xkbset bouncekeys 20
 
 launch=( 
     "dunst" 

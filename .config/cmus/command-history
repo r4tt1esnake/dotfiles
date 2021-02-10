@@ -1,5 +1,7 @@
-clear
+quit
 update-cache
+q
+clear
 fset classical=genre="Classical"
 add ~/Music
 win-remove 
@@ -32,7 +34,6 @@ remove
 add Music/
 D
 filter 
-quit
 qiot
 pl-create default
 playlist

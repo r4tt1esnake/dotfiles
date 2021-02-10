@@ -1,6 +1,5 @@
-if type xkbset; then
-    xkbset bouncekeys 20
-fi
+xkbset bo 20
+xkbset exp =bo
 
 xinput | while read -r m; do
     id=$(echo "$m" | cut -d"=" -f2 | cut -d"[" -f1)

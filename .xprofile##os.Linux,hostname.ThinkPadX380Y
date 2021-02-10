@@ -6,6 +6,9 @@ DIR="$HOME"/bin
 "$DIR"/initDPI.sh
 autorandr -c
 
+# Sleep tool
+"$DIR"/lockConf.sh
+
 # Input methods
 fcitx &
 export GTK_IM_MODULE=fcitx
