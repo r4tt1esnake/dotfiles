@@ -5,19 +5,15 @@ export PRIMARY_DISPLAY="$(xrandr | awk '/ primary/{print $1}')"
 
 # Run xidlehook
 xidlehook \
-  `# Don't lock when there's a fullscreen application` \
   --not-when-fullscreen \
-  `# Don't lock when there's audio playing` \
   --not-when-audio \
-  `# Dim the screen after 60 seconds, undim if user becomes active` \
   --timer 540 \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness .1' \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \
-  `# Undim & lock after 10 more seconds` \
   --timer 600 \
-    'xrandr --output "$PRIMARY_DISPLAY" --brightness 1; loginctl lock-session; xset dpms force off' \
-    '' \
-  `# Finally, suspend an hour after it locks` \
+    'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \ 
+    'loginctl lock-session' \
   --timer 1200 \
     'systemctl suspend' \
-    ''
+  --timer 6000 \
+    'systemctl hibernate' \

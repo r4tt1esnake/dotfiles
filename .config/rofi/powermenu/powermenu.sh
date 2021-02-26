@@ -71,7 +71,7 @@ case $chosen in
     $suspend)
 		mpc -q pause
 		amixer set Master mute
-		systemctl suspend
+		systemctl hybrid-sleep
         ;;
     $logout)
 		i3-msg exit
