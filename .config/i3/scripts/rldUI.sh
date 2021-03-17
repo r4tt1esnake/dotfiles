@@ -1,4 +1,4 @@
-# might be responsible for UI re-scaling in the future
+#!/bin/bash
 
 "$HOME"/bin/initDPI.sh
 "$HOME"/.fehbg

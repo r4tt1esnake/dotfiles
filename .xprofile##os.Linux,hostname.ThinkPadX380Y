@@ -1,5 +1,9 @@
 DIR="$HOME"/bin
 
+export PATH="${PATH}:${DIR}"
+
+xss-lock light-locker &
+
 "$DIR"/inputConfig.sh
 
 # Screen config

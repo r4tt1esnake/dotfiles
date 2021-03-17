@@ -1,3 +1,13 @@
+seek --help
+seek 
+add .
+add *
+filter iwamizu
+filter 
+add Music/
+pl-create default
+pl-new default
+help
 quit
 update-cache
 q
@@ -5,7 +15,6 @@ clear
 fset classical=genre="Classical"
 add ~/Music
 win-remove 
-help
 clear 
 pl-create Best of Casiopea
 pl-create City Pop
@@ -31,11 +40,8 @@ rem
 rm
 delete
 remove
-add Music/
 D
-filter 
 qiot
-pl-create default
 playlist
 new
 save

@@ -6,7 +6,7 @@ getResX () {
     echo "$1" | cut -d":" -f2 | cut -d"x" -f1
 }
 
-DIR="$HOME/.config/polybar/"
+DIR="/home/alexycn/.config/polybar/"
 
 # Terminate already running bar instances
 killall -q polybar
