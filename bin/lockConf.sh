@@ -16,4 +16,4 @@ xidlehook \
   --timer 1200 \
     'systemctl suspend' \
   --timer 6000 \
-    'systemctl hibernate' \
+    'systemctl hybrid-sleep' \

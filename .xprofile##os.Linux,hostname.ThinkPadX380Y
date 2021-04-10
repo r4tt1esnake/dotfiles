@@ -2,7 +2,7 @@ DIR="$HOME"/bin
 
 export PATH="${PATH}:${DIR}"
 
-xss-lock light-locker &
+xss-lock slimlock &
 
 "$DIR"/inputConfig.sh
 
