@@ -1,0 +1,9 @@
+[Unit]
+Description=RClone sync and mount utility
+
+[Service]
+Type=simple
+ExecStart=/home/alexycn/bin/rcloneUtil.sh
+
+[Install]
+WantedBy=default.target
