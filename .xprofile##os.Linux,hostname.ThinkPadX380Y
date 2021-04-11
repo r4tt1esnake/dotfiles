@@ -1,7 +1,5 @@
 DIR="$HOME"/bin
 
-export PATH="${PATH}:${DIR}"
-
 xss-lock slimlock &
 
 "$DIR"/inputConfig.sh
