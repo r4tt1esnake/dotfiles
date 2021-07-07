@@ -18,15 +18,6 @@
 theme="full_circle"
 dir="$HOME/.config/rofi/powermenu"
 
-# random colors
-#styles=($(ls -p --hide="colors.rasi" $dir/styles))
-color="base16ocean"
-
-# comment this line to disable random colors
-sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
-
-# comment these lines to disable random style
-#themes=($(ls -p --hide="powermenu.sh" --hide="styles" --hide="confirm.rasi" --hide="message.rasi" $dir))
 theme="card_square"
 
 uptime=$(uptime -p | sed -e 's/up //g')

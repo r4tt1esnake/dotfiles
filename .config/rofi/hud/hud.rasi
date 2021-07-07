@@ -1,0 +1,66 @@
+configuration {
+    sidebar-mode:           true;
+    show-icons:             false;
+}
+
+@import "../univ_config.rasi"
+
+window {
+   border:      0% 0% 0% 0.3%;
+   height:      100%;
+   width:       30%;
+   location:    east;
+}
+
+prompt {
+    enabled:    true;
+    padding:    1% 0% 1% 0%;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        "HUD";
+    padding:    1% 2% 1% 2%;
+}
+
+inputbar {
+    children:   [ textbox-prompt-colon, prompt ];
+    expand:     false;
+    border:     0% 0% 0% 0%;
+    margin:     0% 0% 0% 0%;
+    padding:    0%;
+    position:   center;
+}
+
+listview {
+    margin:         0% 0% 0% 0%;
+    spacing:        1%;
+    columns:        3;
+    cycle:          false;
+    dynamic:        true;
+    layout:         vertical;
+    fixed-columns:  false;
+}
+
+mainbox {
+    children:   [ inputbar, listview ];
+    spacing:    1%;
+    padding:    0% 0% 0% 0%;
+}
+
+element {
+    orientation:    vertical;
+    border-radius:  0%;
+    padding:        2% 0.5% 2% 0.5%;
+    background-color: @border-alt;
+}
+
+element-text {
+    font:               "Material Icons Outlined 32, Consolas 12";
+    expand:             true;
+    horizontal-align:   0.5;
+    vertical-align:     0.5;
+    margin:             1% 1% 1% 1%;
+}
+
+

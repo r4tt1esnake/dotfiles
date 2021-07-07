@@ -1,8 +1,7 @@
-/** Basic config file **/
-
 configuration {
-  show-icons:         true;
-  icon-theme:         "Vimix-Doder-dark";
-  font: "Consolas 20";
+	font: 			"Consolas 22";
+	show-icons: 	true;
+	terminal: 		"kitty";
+	icon-theme: 	"Vimix-Doder-dark";
+	theme: 			"base16-ocean.rasi";
 }
-@import "/usr/share/rofi/themes/android_notification.rasi"

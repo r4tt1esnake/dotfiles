@@ -1,0 +1,80 @@
+configuration {
+  icon-theme:           "Vimix-Doder-dark";
+  font:                 "Consolas 12";
+  hide-scrollbar:       true;
+}
+
+window {
+  transparency:         "real";
+  background-color:     @background;
+  text-color:           @foreground;
+  border-color:         @border;
+}
+
+
+prompt {
+	background-color: 		@background;
+	text-color: 			@foreground;
+}
+
+entry {
+  background-color:     @background;
+  text-color:           @foreground;
+  placeholder-color:    @foreground;
+  blink:                true;
+}
+
+inputbar {
+  background-color:     @background;
+  text-color:           @foreground;
+  border-color:			@background;
+}
+
+listview {
+  background-color:     @background;
+}
+
+mainbox {
+  background-color:     @background;
+  border-color:			@border;
+}
+
+element {
+  background-color:     @background-alt;
+  text-color:           @foreground;
+}
+
+element-icon {
+  size:                 64px;
+  border:               0px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+  background-color:     @urgent;
+  text-color:           @foreground;
+}
+
+element normal.active,
+element alternate.active {
+  background-color:     @background-alt;
+  text-color:           @foreground;
+}
+
+element selected {
+  background-color:     @selected;
+  text-color:           @foreground;
+  border-color:         @border-alt;
+}
+
+element selected.urgent {
+    background-color:               @urgent;
+    text-color:                     @foreground;
+}
+
+element selected.active {
+    background-color:               @background-alt;
+    color:                          @foreground;
+}
+
+@import "colors/colors.rasi"
