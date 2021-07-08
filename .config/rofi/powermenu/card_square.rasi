@@ -19,7 +19,7 @@ configuration {
 
 window {
     border-radius:                  0px;
-    height:                         28.5%;
+    height:                         27.1%;
     width:                          50%;
     location:                       center;
     x-offset:                       0;
@@ -28,22 +28,23 @@ window {
 
 prompt {
     enabled: 						true;
-    padding:                        0.5% 0.5% 0.5% 0%;
+    padding:                        0.5% 0.5% 0.5% 0.5%;
+    background-color:               #FFFFFF00;
+    border-color:                   @border-alt;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
 	str: 							"System";
-    padding:                        0.5% 0.5% 0.5% 0%;
+    padding:                        0.5% 0.5% 0.5% 0.5%;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
     expand:                         false;
-    border:                  		0% 0% 0% 0.2%;
-    border-radius:                  0% 0% 0% 0%;
+    border:                  		1;
     margin:                         0% 21.3% 0% 0%;
-    padding:                        0.5%;
+    padding:                        0;
     position:                       center;
 }
 
@@ -53,17 +54,20 @@ listview {
     cycle:                          true;
     dynamic:                        true;
     layout:                         horizontal;
+    background-color:               #FFFFFF00;
 }
 
 mainbox {
     children:                       [ inputbar, listview ];
     spacing:                        3.5%;
     padding:                        4% 0% 0% 2%;
+    border:                         1;
 }
 
 element {
     orientation:                    horizontal;
     border-radius:                  0%;
+    border:                         1;
 }
 
 element-text {

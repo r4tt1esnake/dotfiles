@@ -9,12 +9,15 @@ window {
   background-color:     @background;
   text-color:           @foreground;
   border-color:         @border;
+  border:               1;
 }
 
 
 prompt {
-	background-color: 		@background;
-	text-color: 			@foreground;
+	background-color: 		@foreground;
+	text-color: 			@background;
+    	border-color:           @border-alt;
+    padding:    0.5% 1%;
 }
 
 entry {
@@ -22,26 +25,31 @@ entry {
   text-color:           @foreground;
   placeholder-color:    @foreground;
   blink:                true;
+  border-color:         @border-alt;
+  padding:              0.5% 0%;
 }
 
 inputbar {
-  background-color:     @background;
+  background-color:     @transp;
   text-color:           @foreground;
-  border-color:			@background;
+  border-color:			@border-alt;
+  border:               1;
 }
 
 listview {
-  background-color:     @background;
+  background-color:     @transp;
 }
 
 mainbox {
-  background-color:     @background;
-  border-color:			@border;
+  background-color:     @transp;
+  border-color:			@transp;
 }
 
 element {
   background-color:     @background-alt;
   text-color:           @foreground;
+  border-color:         @border-alt;
+  border:               1;
 }
 
 element-icon {
@@ -64,7 +72,7 @@ element alternate.active {
 element selected {
   background-color:     @selected;
   text-color:           @foreground;
-  border-color:         @border-alt;
+  border-color:         @selected;
 }
 
 element selected.urgent {

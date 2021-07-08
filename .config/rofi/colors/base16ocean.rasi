@@ -1,9 +1,15 @@
 * {
-    background:                     #2b303b55;
-    background-alt:                 #2b303b55;
+    background:                     #2b303b99;
+    background-alt:                 #2b303b99;
     foreground:                     #eff1f5ff;
     border:               			#8fa1b3ff;
     border-alt:               		#4f5b66ff;
     selected:               		#ebcb8bee;
     urgent:                         #bf616aff;
+    gui01:                          #a3be8cff;
+    gui02:                          #d08770ff;
+    gui03:                          #b48eadff;
+    gui04:                          #96b5b4ff;
+    gui05:                          #ab7967ff;
+    transp:                         #00000000;
 }

@@ -15,6 +15,7 @@ window {
 prompt {
     enabled:    true;
     padding:    1% 0% 1% 1%;
+    background-color: @border-alt;
 }
 
 textbox-prompt-colon {
@@ -34,17 +35,26 @@ inputbar {
 }
 
 listview {
-    margin:         0% 0% 0% 0%;
-    spacing:        1%;
-    columns:        3;
+    margin:         0%;
+    spacing:        0.5%;
+    columns:        1;
     cycle:          false;
     dynamic:        true;
     layout:         vertical;
     fixed-columns:  false;
 }
 
+textbox {
+    vertical-align:     1;
+    horizontal-align:   1;
+    padding:            0% 1% 1%;
+    background-color:   @background;
+    text-color:         @foreground;
+    str:                "asdfasdf";
+}
+
 mainbox {
-    children:   [ inputbar, listview ];
+    children:   [ inputbar, listview, textbox ];
     spacing:    1%;
     padding:    0% 0% 0% 0%;
 }
@@ -52,16 +62,15 @@ mainbox {
 element {
     orientation:    vertical;
     border-radius:  0%;
-    padding:        2% 0.5% 2% 0.5%;
+    padding:        1% 0%;
     background-color: @border;
 }
 
 element-text {
-    font:               "Material Icons Outlined 32, Consolas 20";
+    font:               "Consolas 14";
     expand:             true;
-    horizontal-align:   0.5;
-    vertical-align:     0.5;
-    margin:             1% 1% 2% 1%;
+    horizontal-align:   0;
+    margin:             1%;
 }
 
 

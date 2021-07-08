@@ -18,8 +18,6 @@ configuration {
 @import "../univ_config.rasi"
 
 window {
-	border:							0% 0% 0% 1.5%;
-    border-radius:                  0% 0% 0% 0%;
     height:                         49.50%;
     width:                          40%;
     location:                       center;
@@ -29,29 +27,23 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						0% 1% 0% 0%;
 }
 
 entry {
-    expand:                         true;
+    expand:                         false;
     horizontal-align:               0;
     placeholder:                    "Search Applications";
-    padding:                        0.15% 0% 0% 0%;
 }
 
 inputbar {
     children: 						[ prompt, entry ];
     expand:                         false;
-	border:							0% 0% 0.3% 0%;
-    border-radius:                  0% 0% 0% 0%;
-    margin:                         0% 17% 0% 0%;
-    padding:                        1%;
     position:                       center;
 }
 
 listview {
     columns:                        4;
-    spacing:                        1%;
+    spacing:                        1% 0.5%;
     cycle:                          false;
     dynamic:                        true;
     layout:                         vertical;
@@ -59,16 +51,14 @@ listview {
 
 mainbox {
     children:             [ inputbar, listview ];
-	border:							0% 0% 0% 1.5%;
-    border-radius:                  0% 0% 0% 0%;
     spacing:                       	2%;
-    padding:                        2.5% 2% 2.5% 2%;
+    padding:                        2% 2%;
 }
 
 element {
     orientation:                    vertical;
     border-radius:                  0%;
-    padding:                        1.7% 1% 1.7% 1%;
+    padding:                        1.7% 2%;
 }
 
 element-icon {
@@ -76,19 +66,10 @@ element-icon {
     border:                         0px;
 }           
 
-element-text {          
+element-text {
+    font:                           "Consolas 10";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         0.5% 1% 0% 1%;
-}
-
-element normal.urgent,
-element alternate.urgent {
-    border-radius:                  1%;
-}       
-
-element selected {      
-    border:				            0% 0% 0% 0%;
-    border-radius:                  0% 0% 0% 0%;
+    margin:                         1% 0 0 0;
 }
