@@ -27,6 +27,8 @@ window {
 
 prompt {
     enabled: 						true;
+    background-color:               @foreground;
+    text-color:                     @background;
 }
 
 entry {

@@ -14,14 +14,21 @@ window {
 
 
 prompt {
-	background-color: 		@foreground;
+	background-color: 		@transp;
 	text-color: 			@background;
-    	border-color:           @border-alt;
+    	border-color:       @border-alt;
+    padding:    0.5% 1%;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    background-color:   @foreground;
+    text-color: @background;
     padding:    0.5% 1%;
 }
 
 entry {
-  background-color:     @background;
+  background-color:     @transp;
   text-color:           @foreground;
   placeholder-color:    @foreground;
   blink:                true;
@@ -30,7 +37,7 @@ entry {
 }
 
 inputbar {
-  background-color:     @transp;
+  background-color:     @background-alt;
   text-color:           @foreground;
   border-color:			@border-alt;
   border:               1;

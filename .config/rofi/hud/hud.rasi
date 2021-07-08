@@ -16,20 +16,22 @@ prompt {
     enabled:    true;
     padding:    1% 0% 1% 1%;
     background-color: @border-alt;
+    text-color:       @foreground;
+    border: 0;
 }
 
 textbox-prompt-colon {
     expand:     false;
     str:        "HUD";
     padding:    1% 2% 1% 2%;
+    border: 0;
 }
 
 inputbar {
     children:   [ textbox-prompt-colon, prompt ];
     expand:     false;
-    border:     0% 0% 0% 0%;
-    margin:     0% 0% 0% 0%;
     padding:    0%;
+    border:     0;
     position:   center;
     background-color: @border-alt;
 }
@@ -39,6 +41,7 @@ listview {
     spacing:        0.5%;
     columns:        1;
     cycle:          false;
+    border:         0;
     dynamic:        true;
     layout:         vertical;
     fixed-columns:  false;
@@ -56,13 +59,14 @@ textbox {
 mainbox {
     children:   [ inputbar, listview, textbox ];
     spacing:    1%;
-    padding:    0% 0% 0% 0%;
+    padding:    0;
 }
 
 element {
     orientation:    vertical;
     border-radius:  0%;
     padding:        1% 0%;
+    border: 0;
     background-color: @border;
 }
 
