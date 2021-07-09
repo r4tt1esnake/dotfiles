@@ -15,6 +15,7 @@ bindsym $mod+Shift+q kill
 # rofi keybind
 bindsym $mod+d exec --no-startup-id /home/alexycn/.config/rofi/launchers/launcher.sh
 bindsym $mod+c exec --no-startup-id /home/alexycn/.config/rofi/powermenu/powermenu.sh
+bindsym $mod+x exec --no-startup-id /home/alexycn/.config/rofi/hud/hud.sh
 
 # change focus
 bindsym $mod+j focus left

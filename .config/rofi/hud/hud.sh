@@ -15,6 +15,11 @@ while printf ''; do
 	buds1=$(echo "$buds" | cut -d'%' -f1)
 	buds2=$(echo "$buds" | cut -d'%' -f2)
 	buds3=$(echo "$buds" | cut -d'%' -f3)
+	if [[ $buds == "" ]]; then
+	    cond=""
+	else
+	    cond="%%"
+	fi
     TEXT=$(cat <<EOF | sed 's/\\/\\\\/g' | tr -d "\n" | tr -d "\t"
 {
 	"prompt": "Logged in as $USER on $HOSTNAME",
@@ -23,7 +28,7 @@ while printf ''; do
 		{"text":"<u>RAM</u>\t\t\t<b>$ramUse</b>", "markup": true},
 		{"text":"<u>Brightness</u>\t$br_icon\t<b>$br%%</b>", "markup": true},
 		{"text":"<u>Volume</u>\t\t$vol_icon\t<b>$vol%%</b>", "markup": true},
-		{"text":"<u>Buds Charge</u>\t\t<b>$buds1%%$buds2%%$buds3</b>", "markup": true}
+		{"text":"<u>Buds Charge</u>\t\t<b>$buds1$cond$buds2$cond$buds3</b>", "markup": true}
 	]}
 EOF
 )
@@ -34,5 +39,5 @@ EOF
  	sleep 1;
  	if [ "$toggleMarkup" = "true" ]; then toggleMarkup="false"; else toggleMarkup="true"; fi
 
-done | rofi -theme $dir/hud.rasi -modi blocks -show blocks -blocks-wrap "$@" -dmenu
+done | rofi -theme $dir/hud.rasi -modi blocks -show blocks -blocks-wrap "$@"
 
