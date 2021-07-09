@@ -1,0 +1,5 @@
+#!/bin/bash
+
+core=$(sensors | grep "id 0" | cut -d'(' -f1 | cut -d':' -f2 | cut -c 2-)
+
+echo $core

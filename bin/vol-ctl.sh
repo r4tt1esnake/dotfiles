@@ -11,10 +11,10 @@ fi
 
 if [[ "$1" == "inc" ]]; then
     pactl set-sink-volume @DEFAULT_SINK@ +5%
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "increased"
+    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "increased ($(volume))"
 elif [[ "$1" == "dec" ]]; then
     pactl set-sink-volume @DEFAULT_SINK@ -5%
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "decreased"
+    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "decreased ($(volume))"
 elif [[ "$1" == "mut" ]]; then
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     temp=$(amixer get Master | sed 7q | grep -c '\[on\]')

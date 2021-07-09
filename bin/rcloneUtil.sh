@@ -8,7 +8,7 @@ while true; do
         rclone copy $path/GDrive-async UMich-GDrive:
         rclone copy UMich-GDrive: $path/GDrive-async
         if [[ $(ls $path/mnt/GDrive) == "" ]]; then
-            rclone mount UMich-GDrive: $path/mnt/GDrive
+            rclone mount UMich-GDrive: $path/mnt/GDrive &
         fi
     fi
     sleep 300

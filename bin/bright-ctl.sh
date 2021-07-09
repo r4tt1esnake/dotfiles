@@ -11,10 +11,10 @@ fi
 
 if [[ "$1" == "inc" ]]; then
     brightnessctl s +5%
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/display-brightness-high-symbolic.svg" "$prgmNm" "increased"
+    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/display-brightness-high-symbolic.svg" "$prgmNm" "increased ($(brightness))"
 elif [[ "$1" == "dec" ]]; then
     brightnessctl s 5%-
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/display-brightness-low-symbolic.svg" "$prgmNm" "decreased"
+    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/display-brightness-low-symbolic.svg" "$prgmNm" "decreased ($(brightness))"
 else
     if [[ $(($1)) == $1 ]]; then
         brightnessctl s "$1"%
