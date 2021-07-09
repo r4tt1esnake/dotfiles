@@ -51,7 +51,7 @@ textbox {
     vertical-align:     1;
     horizontal-align:   1;
     padding:            0% 1% 1%;
-    background-color:   @background;
+    background-color:   @transp;
     text-color:         @foreground;
     str:                "HUD tool created by R4tt1esnake (@alexycn8)";
 }
