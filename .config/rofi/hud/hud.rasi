@@ -71,10 +71,10 @@ element {
 }
 
 element-text {
-    font:               "Consolas 14";
+    font:               "Consolas 15";
     expand:             true;
-    horizontal-align:   0;
-    margin:             1%;
+    padding:            1%;
+    vertical-align:     0.5;
 }
 
 
