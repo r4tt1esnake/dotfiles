@@ -28,6 +28,7 @@ while printf ''; do
 		{"text":"<u>RAM</u>\t\t\t<b>$ramUse</b>", "markup": true},
 		{"text":"<u>Brightness</u>\t$br_icon\t<b>$br%%</b>", "markup": true},
 		{"text":"<u>Volume</u>\t\t$vol_icon\t<b>$vol%%</b>", "markup": true},
+		{"text":"<u>Weather</u>\t\t<b>$(curl wttr.in/?format=3)</b>", "markup": true},
 		{"text":"<u>Buds Charge</u>\t\t<b>$buds1$cond$buds2$cond$buds3</b>", "markup": true}
 	]}
 EOF
