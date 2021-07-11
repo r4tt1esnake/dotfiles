@@ -1,7 +1,8 @@
-prgmNm="Brightness Control"
+prgm="Brightness Control"
+icon="/usr/share/icons/Vimix-Doder/symbolic/status/brightness-display-symbolic.svg"
 
 die() {
-    echo "USAGE: ./bright-ctl.sh <inc/dec>"
+    echo "USAGE: ./bright-ctl.sh <inc/dec/x>"
     exit 1
 }
 
@@ -10,15 +11,22 @@ if [[ $# != 1 ]]; then
 fi
 
 if [[ "$1" == "inc" ]]; then
-    brightnessctl s +5%
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/display-brightness-high-symbolic.svg" "$prgmNm" "increased ($(brightness))"
+    delta="+5%"
+    string="Increased"
 elif [[ "$1" == "dec" ]]; then
-    brightnessctl s 5%-
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/display-brightness-low-symbolic.svg" "$prgmNm" "decreased ($(brightness))"
+    delta="5%-"
+    string="Decreased"
 else
     if [[ $(($1)) == $1 ]]; then
-        brightnessctl s "$1"%
+        delta="$1%"
+        string="Brightness set"
     else
         die
     fi
 fi
+
+brightnessctl s $delta
+
+curr="$(echo "$(brightnessctl g)/$(brightnessctl m)" | bc -l | cut -c 2-3)%"
+
+dunstify -i $icon -h string:x-dunst-stack-tag:bright -a "$prgm" "$string ($curr)"

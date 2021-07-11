@@ -1,7 +1,8 @@
-prgmNm="Volume Control"
+prgm="Volume Control"
+icon="/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg"
 
 die() {
-    echo "USAGE: ./vol-ctl.sh <inc/dec/mut/%>"
+    echo "USAGE: ./vol-ctl.sh <inc/dec/mut/x>"
     exit 1
 }
 
@@ -9,24 +10,34 @@ if [[ $# != 1 ]]; then
     die
 fi
 
+cmd="volume"
+
 if [[ "$1" == "inc" ]]; then
-    pactl set-sink-volume @DEFAULT_SINK@ +5%
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "increased ($(volume))"
+    delta="+5%"
+    string="Increased"
 elif [[ "$1" == "dec" ]]; then
-    pactl set-sink-volume @DEFAULT_SINK@ -5%
-    notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "decreased ($(volume))"
+    delta="-5%"
+    string="Decreased"
 elif [[ "$1" == "mut" ]]; then
-    pactl set-sink-mute @DEFAULT_SINK@ toggle
+    delta="toggle"
     temp=$(amixer get Master | sed 7q | grep -c '\[on\]')
     if [[ $temp == 0 ]]; then
-        notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-low-symbolic.svg" "$prgmNm" "muted"
+        string="Muted"
     else
-        notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg" "$prgmNm" "unmuted"
+        string="Unmuted"
     fi  
+    cmd="mute"
 else
     if [[ $(($1)) == $1 ]]; then
-        pactl set-sink-volume @DEFAULT_SINK@ "$1"%
+        delta="$1%"
+        string="Volume set"
     else
         die
     fi
 fi
+
+pactl set-sink-"$cmd" @DEFAULT_SINK@ $delta
+
+curr="$(pamixer --get-volume)%"
+
+dunstify -i $icon -h string:x-dunst-stack-tag:vol -a "$prgm" "$string ($curr)"
