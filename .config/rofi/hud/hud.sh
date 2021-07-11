@@ -7,6 +7,7 @@ while printf ''; do
     cpuTemp=$(getTemps)
 	cpuUse=$(usedcpu | cut -d'%' -f1)
 	ramUse=$(usedram)
+	ramUsePerc=$(usedramperc)
 	br=$(brightness | cut -d'%' -f1 | cut -c 5-)
 	br_icon=$(brightness | cut -c -3)
 	vol=$(volume | cut -d'%' -f1 | cut -c 5-)
@@ -25,10 +26,10 @@ while printf ''; do
 	"prompt": "Logged in as $USER on $HOSTNAME",
 	"lines":[
         {"text":"<u>CPU</u>\t\t\t<b>$cpuTemp\t\t$cpuUse%%</b>", "markup": true},
-		{"text":"<u>RAM</u>\t\t\t<b>$ramUse</b>", "markup": true},
+		{"text":"<u>RAM</u>\t\t\t<b>$ramUse\t\t$ramUsePerc%</b>", "markup": true},
 		{"text":"<u>Brightness</u>\t$br_icon\t<b>$br%%</b>", "markup": true},
 		{"text":"<u>Volume</u>\t\t$vol_icon\t<b>$vol%%</b>", "markup": true},
-		{"text":"<u>Weather</u>\t\t<b>$(curl wttr.in/?format=3)</b>", "markup": true},
+		{"text":"<u>Weather</u>\t\t<b>$(curl wttr.in/?format=3 &)</b>", "markup": true},
 		{"text":"<u>Buds Charge</u>\t\t<b>$buds1$cond$buds2$cond$buds3</b>", "markup": true}
 	]}
 EOF
