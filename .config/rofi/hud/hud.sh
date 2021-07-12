@@ -25,11 +25,11 @@ while printf ''; do
 {
 	"prompt": "Logged in as $USER on $HOSTNAME",
 	"lines":[
-        {"text":"<u>CPU</u>\t\t\t<b>$cpuTemp\t\t$cpuUse%%</b>", "markup": true},
+        {"text":"<u>CPU</u>\t\t\t<b>$cpuTemp\t\t$cpuUse%%</b>", "markup": true, "data": "cpu"},
 		{"text":"<u>RAM</u>\t\t\t<b>$ramUse\t\t$ramUsePerc%</b>", "markup": true},
 		{"text":"<u>Brightness</u>\t$br_icon\t<b>$br%%</b>", "markup": true},
 		{"text":"<u>Volume</u>\t\t$vol_icon\t<b>$vol%%</b>", "markup": true},
-		{"text":"<u>Weather</u>\t\t<b>$(curl wttr.in/?format=3 &)</b>", "markup": true},
+		{"text":"<u>Weather</u>\t\t<b>$(curl wttr.in/?format=3 2> /dev/null)</b>", "markup": true},
 		{"text":"<u>Buds Charge</u>\t\t<b>$buds1$cond$buds2$cond$buds3</b>", "markup": true}
 	]}
 EOF
@@ -41,5 +41,5 @@ EOF
  	sleep 1;
  	if [ "$toggleMarkup" = "true" ]; then toggleMarkup="false"; else toggleMarkup="true"; fi
 
-done | rofi -theme $dir/hud.rasi -modi blocks -show blocks -blocks-wrap "$@"
+done | rofi -theme $dir/hud.rasi -modi blocks -show blocks -blocks-wrap "$@" 2> /dev/null
 

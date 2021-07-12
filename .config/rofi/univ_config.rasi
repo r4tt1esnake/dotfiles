@@ -9,7 +9,7 @@ window {
   background-color:     @background;
   text-color:           @foreground;
   border-color:         @border;
-  border:               1;
+  border:               3;
 }
 
 

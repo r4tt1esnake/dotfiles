@@ -41,6 +41,7 @@ inputbar {
     children: 						[ prompt, entry ];
     expand:                         false;
     position:                       center;
+    margin:                         1% 0% 0% 0%;
 }
 
 listview {
@@ -54,7 +55,7 @@ listview {
 mainbox {
     children:             [ inputbar, listview ];
     spacing:                       	2%;
-    padding:                        2% 2%;
+    padding:                        2% 3%;
 }
 
 element {

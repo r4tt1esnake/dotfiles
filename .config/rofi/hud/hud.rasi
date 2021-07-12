@@ -6,7 +6,7 @@ configuration {
 @import "../univ_config.rasi"
 
 window {
-   border:      0% 0% 0% 0.3%;
+   border:      0% 0% 0% 3;
    height:      100%;
    width:       30%;
    location:    east;
