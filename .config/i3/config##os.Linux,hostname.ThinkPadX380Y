@@ -158,9 +158,9 @@ bindsym XF86TouchpadToggle exec --no-startup-id ~/bin/toggle-trackpad.sh
 bindsym Pause exec playerctl play-pause
 
 # Screenshots
-bindsym --release Print exec --no-startup-id ~/bin/screenshot.sh 4
-bindsym --release Shift+Print exec --no-startup-id ~/bin/screenshot.sh area
-bindsym --release Control+Print exec --no-startup-id ~/bin/screenshot.sh window
+bindsym --release Print exec --no-startup-id ~/bin/screenshot.sh &
+bindsym --release Shift+Print exec --no-startup-id ~/bin/screenshot.sh area &
+bindsym --release Control+Print exec --no-startup-id ~/bin/screenshot.sh window &
 
 # Window configuration
 default_border pixel 4
