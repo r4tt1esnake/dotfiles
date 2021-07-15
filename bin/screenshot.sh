@@ -1,9 +1,22 @@
-if [[ $1 == "area" ]]; then
-    scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -q 100 -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'
-elif [[ $1 == "window" ]]; then
-    scrot -u 'screenshot_%Y%m%d_%H%M%S.png' -q 100 -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'
-else
-    scrot 'screenshot_%Y%m%d_%H%M%S.png' -q 100 -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'
+output="$HOME/Pictures/screenshots"
+
+ls "$output" > /dev/null
+
+if [[ $? != 0 ]]; then
+    mkdir -p "$output"
 fi
 
-notify-send -c "sys-alert" -i "/usr/share/icons/Vimix-Doder-dark/symbolic/devices/camera-photo-symbolic.svg" "Screenshot" "if possible, image will be saved to\n~/Pictures/screenshots"
+filename="$output/$(date +"%Y-%m-%d_%H.%M.%S")"
+
+command="maim -f png -u -m 10"
+
+clip="xclip -sel c -t image/png"
+
+if [[ $1 == "area" ]]; then
+    $command -s -b 3 -p 0 -D "$filename" | $clip
+elif [[ $1 == "window" ]]; then
+    $command -i $(xdotool getactivewindow) "$filename" | $clip
+else
+    $command "$filename" | $clipS
+fi
+
