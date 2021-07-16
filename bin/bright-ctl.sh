@@ -1,3 +1,5 @@
+#!/bin/bash
+
 prgm="Brightness Control"
 icon="/usr/share/icons/Vimix-Doder/symbolic/status/brightness-display-symbolic.svg"
 

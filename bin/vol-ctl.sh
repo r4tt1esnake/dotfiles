@@ -1,3 +1,5 @@
+#!/bin/bash
+
 prgm="Volume Control"
 icon="/usr/share/icons/Vimix-Doder/symbolic/status/audio-volume-high-symbolic.svg"
 
