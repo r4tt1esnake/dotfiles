@@ -1,1 +1,1 @@
-export PATH="${PATH}:/home/alexycn/bin"
+#export PATH="${PATH}:/home/alexycn/bin"

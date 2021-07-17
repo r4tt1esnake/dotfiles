@@ -2,8 +2,6 @@
 
 "$HOME"/.config/i3/scripts/rldUI.sh
 
-#"$HOME"/.config/picom/launch.sh &
-
 xkbset bouncekeys 20
 
 launch=( 
