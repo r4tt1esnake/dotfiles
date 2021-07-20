@@ -11,8 +11,8 @@ while true; do
         connection_status=$(nmcli g | tail -n +2 | awk '{print $1}')
         if [[ $connection_status == "connected" ]]; then
         
-            rclone copy $a_path/GDrive-$i-async GDrive-UM:
-            rclone copy GDrive-UM: $a_path/GDrive-$i-async
+            rclone copy $a_path/GDrive-$i-async GDrive-$i:
+            rclone copy GDrive-$i: $a_path/GDrive-$i-async
             
             if [[ $(ls $path/mnt/GDrive-$i) == "" ]]; then
                 rclone mount GDrive-$i: $m_path/GDrive-$i &
