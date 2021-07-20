@@ -1,15 +1,23 @@
 #!/bin/bash
 
-path="/home/alexycn"
+a_path="/home/alexycn/Cloud-async"
+m_path="/home/alexycn/mnt"
+
+arr=("UM" "personal" "business")
 
 while true; do
-    connection_status=$(nmcli g | tail -n +2 | awk '{print $1}')
-    if [[ $connection_status == "connected" ]]; then
-        rclone copy $path/GDrive-async UMich-GDrive:
-        rclone copy UMich-GDrive: $path/GDrive-async
-        if [[ $(ls $path/mnt/GDrive) == "" ]]; then
-            rclone mount UMich-GDrive: $path/mnt/GDrive &
+    for i in "${arr[@]}"
+    do
+        connection_status=$(nmcli g | tail -n +2 | awk '{print $1}')
+        if [[ $connection_status == "connected" ]]; then
+        
+            rclone copy $a_path/GDrive-$i-async GDrive-UM:
+            rclone copy GDrive-UM: $a_path/GDrive-$i-async
+            
+            if [[ $(ls $path/mnt/GDrive-$i) == "" ]]; then
+                rclone mount GDrive-$i: $m_path/GDrive-$i &
+            fi
         fi
-    fi
-    sleep 300
+        sleep 300
+    done
 done
